@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="core" />
         <module name="family-service" />
+        <module name="user-service" />
       </profile>
     </annotationProcessing>
   </component>

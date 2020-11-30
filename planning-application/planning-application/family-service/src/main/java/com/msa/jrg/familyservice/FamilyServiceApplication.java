@@ -1,17 +1,15 @@
 package com.msa.jrg.familyservice;
 
-import com.msa.jrg.core.model.AppException;
-import com.msa.jrg.core.model.MsaBaseException;
+import com.msa.jrg.familyservice.config.FamilyEventPropertiesConfig;
+import com.msa.jrg.familyservice.config.PlacePropertiesConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
+@EnableConfigurationProperties({PlacePropertiesConfig.class, FamilyEventPropertiesConfig.class})
 @SpringBootApplication
 public class FamilyServiceApplication {
-
-    private MsaBaseException exception = new AppException();
-
     public static void main(String[] args) {
         SpringApplication.run(FamilyServiceApplication.class, args);
     }
-
 }

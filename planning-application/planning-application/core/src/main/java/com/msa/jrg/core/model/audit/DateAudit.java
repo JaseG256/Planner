@@ -1,6 +1,7 @@
 package com.msa.jrg.core.model.audit;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.msa.jrg.core.model.MsaBaseObject;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
@@ -16,7 +17,7 @@ import java.time.Instant;
         value = {"createdAt", "updatedAt"},
         allowGetters = true
 )
-public abstract class DateAudit implements Serializable {
+public abstract class DateAudit extends MsaBaseObject implements Serializable {
 
     @CreatedDate
     private Instant createdAt;
