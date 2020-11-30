@@ -1,0 +1,13 @@
+com\msa\jrg\core\model\audit\UserDateAudit.class
+com\msa\jrg\core\payload\ApiResponse.class
+com\msa\jrg\core\util\JsonUtil.class
+com\msa\jrg\core\model\ResourceNotFoundException.class
+com\msa\jrg\core\jffh.class
+com\msa\jrg\core\model\MsaBaseObject.class
+com\msa\jrg\core\model\MsaErrorResponse.class
+com\msa\jrg\core\model\BadRequestException.class
+com\msa\jrg\core\model\MsaBaseException.class
+com\msa\jrg\CoreApp.class
+com\msa\jrg\core\service\CRUDService.class
+com\msa\jrg\core\model\AppException.class
+com\msa\jrg\core\model\audit\DateAudit.class
