@@ -24,6 +24,7 @@
         <spring-cloud.version>2020.0.0-M5</spring-cloud.version>
         <jakarta.persistence.version>2.2.3</jakarta.persistence.version>
         <jakarta.validation.version>2.0.1</jakarta.validation.version>
+        <javax-validation.version>2.2.1</javax-validation.version>
         <spring-data.version>2.2.2.RELEASE</spring-data.version>
         <lombok.version>1.18.10</lombok.version>
     </properties>
@@ -49,8 +50,10 @@
     <modules>
         <module>eureka-server</module>
         <module>core</module>
-        <module>family-service</module>
+        <module>dbfile-service</module>
         <module>user-service</module>
+        <module>family-service</module>
+        <module>gateway</module>
     </modules>
 
     <repositories>

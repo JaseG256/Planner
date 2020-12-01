@@ -2,11 +2,14 @@ package com.msa.jrg.familyservice.model;
 
 import com.msa.jrg.core.model.audit.UserDateAudit;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
+
 import java.util.function.Supplier;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 @Entity
 @Table(name = "familyEvent")
@@ -17,11 +20,10 @@ public class FamilyEvent extends UserDateAudit implements FamilyServiceInterface
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
     @Column(name = "title")
     private String title;
 
-    @NotBlank
+    @Lob
     @Column(name = "when")
 //    @Valid
     private When when;
@@ -38,7 +40,7 @@ public class FamilyEvent extends UserDateAudit implements FamilyServiceInterface
         this.title = title;
     }
 
-    public FamilyEvent(@NotBlank String title, @NotBlank When when) {
+    public FamilyEvent(String title, When when) {
         this.title = title;
         this.when = when;
     }

@@ -22,6 +22,7 @@ public class Place extends UserDateAudit implements FamilyServiceInterface {
     @Column
     private String location;
 
+    @Lob
     @Column
     private Address address;
 

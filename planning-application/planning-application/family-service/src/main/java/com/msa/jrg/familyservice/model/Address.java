@@ -1,11 +1,13 @@
 package com.msa.jrg.familyservice.model;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.util.function.Supplier;
 
+@EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @Data
 public class Address extends FamilyServiceObject implements Serializable {
