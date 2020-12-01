@@ -8,7 +8,6 @@ import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalTimeSerializer;
 import lombok.Data;
 
-import javax.validation.constraints.NotBlank;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -44,10 +43,8 @@ public class FamilyEventRequest {
         this.zipCode = zipCode;
     }
 
-    @NotBlank
     private String title;
 
-    @NotBlank
     @JsonSerialize(using = LocalDateSerializer.class)
     @JsonDeserialize(using = LocalDateDeserializer.class)
     private LocalDate startDate;
@@ -64,7 +61,6 @@ public class FamilyEventRequest {
     @JsonDeserialize(using = LocalTimeDeserializer.class)
     private LocalTime endTime;
 
-    @NotBlank
     private String nameOfPlace;
 
     private String location;

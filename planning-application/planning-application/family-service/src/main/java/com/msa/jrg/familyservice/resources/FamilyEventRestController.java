@@ -69,17 +69,17 @@ public class FamilyEventRestController {
         Place createdPlace = getPlace(eventRequest, createdAddress);
         FamilyEvent createdEvent = saveFamilyEvent(eventRequest, createdWhen, createdPlace);
 
-        String msg = String.format(
-                eventService.getPropertiesConfig().getFamily_event_exception_message() + ",{}", createdEvent);
-        logger.info(msg);
+//        String msg = String.format(
+//                eventService.getPropertiesConfig().getFamily_event_exception_message() + ",{}", createdEvent);
+//        logger.info(msg);
 
         if (createdEvent == null)
             return ResponseEntity.noContent().build();
 
         URI location = getUri(createdEvent);
 
-        logger.info(String.format(
-                eventService.getPropertiesConfig().getFamily_event_resource_name() + ", {}", location));
+//        logger.info(String.format(
+//                eventService.getPropertiesConfig().getFamily_event_resource_name() + ", {}", location));
 
         return ResponseEntity.created(location).body(new FamilyEventResponse(
                 createdEvent.getTitle(), createdEvent.getWhen().getStartDate(),
