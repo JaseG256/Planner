@@ -21,13 +21,22 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>11</java.version>
         <spring-boot.version>2.4.0</spring-boot.version>
+        <spring-cloud.version>2020.0.0-M5</spring-cloud.version>
         <jakarta.persistence.version>2.2.3</jakarta.persistence.version>
+        <jakarta.validation.version>2.0.1</jakarta.validation.version>
         <spring-data.version>2.2.2.RELEASE</spring-data.version>
         <lombok.version>1.18.10</lombok.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
@@ -38,9 +47,18 @@
     </dependencyManagement>
 
     <modules>
+        <module>eureka-server</module>
         <module>core</module>
         <module>family-service</module>
         <module>user-service</module>
     </modules>
+
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+        </repository>
+    </repositories>
 
 </project>

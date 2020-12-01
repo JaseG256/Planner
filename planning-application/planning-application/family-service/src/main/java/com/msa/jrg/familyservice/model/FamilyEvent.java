@@ -62,7 +62,7 @@ public class FamilyEvent extends UserDateAudit implements FamilyServiceInterface
     @Override
     public String toString() {
         return getDescription(() ->
-                String.format("This event is Titled: %s. It takes place on %s at %s and ends on %s at %s. " +
+                String.format("Event titled: %s. Takes place on %s at %s and ends on %s at %s. " +
                         "Event is being held at %s, located at %s.", title, when.getStartDate(), when.getStartTime(),
                         when.getEndDate(), when.getEndTime(), place.getNameOfPlace(), place.getLocation()));
     }
