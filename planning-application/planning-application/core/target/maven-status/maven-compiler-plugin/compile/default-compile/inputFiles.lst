@@ -6,6 +6,7 @@ C:\Users\Karen\Projects\Planner\planning-application\planning-application\core\s
 C:\Users\Karen\Projects\Planner\planning-application\planning-application\core\src\main\java\com\msa\jrg\core\service\CRUDService.java
 C:\Users\Karen\Projects\Planner\planning-application\planning-application\core\src\main\java\com\msa\jrg\core\model\audit\UserDateAudit.java
 C:\Users\Karen\Projects\Planner\planning-application\planning-application\core\src\main\java\com\msa\jrg\core\model\ResourceNotFoundException.java
+C:\Users\Karen\Projects\Planner\planning-application\planning-application\core\src\main\java\com\msa\jrg\core\model\MsaControllerAdvice.java
 C:\Users\Karen\Projects\Planner\planning-application\planning-application\core\src\main\java\com\msa\jrg\core\util\JsonUtil.java
 C:\Users\Karen\Projects\Planner\planning-application\planning-application\core\src\main\java\com\msa\jrg\core\payload\ApiResponse.java
 C:\Users\Karen\Projects\Planner\planning-application\planning-application\core\src\main\java\com\msa\jrg\core\model\audit\DateAudit.java

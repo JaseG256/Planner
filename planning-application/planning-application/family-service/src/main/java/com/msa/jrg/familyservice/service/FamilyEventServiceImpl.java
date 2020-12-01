@@ -3,6 +3,7 @@ package com.msa.jrg.familyservice.service;
 import com.msa.jrg.core.model.ResourceNotFoundException;
 import com.msa.jrg.core.payload.ApiResponse;
 import com.msa.jrg.familyservice.config.FamilyEventPropertiesConfig;
+import com.msa.jrg.familyservice.exception.FamilyEventNotFoundException;
 import com.msa.jrg.familyservice.model.FamilyEvent;
 import com.msa.jrg.familyservice.model.Place;
 import com.msa.jrg.familyservice.model.When;
@@ -53,19 +54,19 @@ public class FamilyEventServiceImpl implements FamilyEventService {
             logException(id);
             eventRepository.delete(familyEvent);
             return new ApiResponse(true, propertiesConfig.getFamily_event_delete_apiResponse_message());
-        }).orElseThrow(() -> getResourceNotFoundException(id));
+        }).orElseThrow(() -> getFamilyEventNotFoundException(id));
     }
 
     @Override
     public FamilyEvent findByTitle(String title) {
         return eventRepository.findByTitle(title).orElseThrow(
-                () -> getResourceNotFoundException(title));
+                () -> getFamilyEventNotFoundException(title));
     }
 
     @Override
     public FamilyEvent findByWhen(When when) {
         return eventRepository.findByWhen(when).orElseThrow(
-                () -> getResourceNotFoundException(when));
+                () -> getFamilyEventNotFoundException(when));
     }
 
     @Override
@@ -101,9 +102,9 @@ public class FamilyEventServiceImpl implements FamilyEventService {
         return resultList;
     }
 
-    private ResourceNotFoundException getResourceNotFoundException(Object fieldValue) {
+    private FamilyEventNotFoundException getFamilyEventNotFoundException(Object fieldValue) {
         logException(fieldValue);
-        return new ResourceNotFoundException(
+        return new FamilyEventNotFoundException(
                 propertiesConfig.getFamily_event_exception_message(),
                 propertiesConfig.getFamily_event_resource_name(),
                 propertiesConfig.getFamily_event_field_id(), fieldValue

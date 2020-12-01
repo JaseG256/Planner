@@ -3,6 +3,7 @@ package com.msa.jrg.familyservice.service;
 import com.msa.jrg.core.model.ResourceNotFoundException;
 import com.msa.jrg.core.payload.ApiResponse;
 import com.msa.jrg.familyservice.config.PlacePropertiesConfig;
+import com.msa.jrg.familyservice.exception.PlaceNotFoundException;
 import com.msa.jrg.familyservice.model.Address;
 import com.msa.jrg.familyservice.model.Place;
 import com.msa.jrg.familyservice.repository.PlaceRepository;
@@ -49,19 +50,19 @@ public class PlaceServiceImpl implements PlaceService {
         return placeRepository.findById(id).map(place -> {
             placeRepository.delete(place);
             return new ApiResponse(true, propertiesConfig.getPlace_delete_apiResponse_message());
-        }).orElseThrow(() -> getResourceNotFoundException(id));
+        }).orElseThrow(() -> getPlaceNotFoundException(id));
     }
 
     @Override
     public Place findByNameOfPlace(String nameOfPlace) {
         return placeRepository.findByNameOfPlace(nameOfPlace).orElseThrow(() ->
-                getResourceNotFoundException(nameOfPlace));
+                getPlaceNotFoundException(nameOfPlace));
     }
 
     @Override
     public Place findByAddress(Address address) {
         return placeRepository.findByAddress(address)
-                .orElseThrow(() -> getResourceNotFoundException(address));
+                .orElseThrow(() -> getPlaceNotFoundException(address));
     }
 
     @Override
@@ -86,9 +87,9 @@ public class PlaceServiceImpl implements PlaceService {
         return placeRepository;
     }
 
-    private ResourceNotFoundException getResourceNotFoundException(Object nameOfPlace) {
+    private PlaceNotFoundException getPlaceNotFoundException(Object nameOfPlace) {
         logException(nameOfPlace);
-        return new ResourceNotFoundException(
+        return new PlaceNotFoundException(
                 propertiesConfig.getPlace_exception_message(),
                 propertiesConfig.getPlace_resource_name(),
                 propertiesConfig.getPlace_field_id(), nameOfPlace);

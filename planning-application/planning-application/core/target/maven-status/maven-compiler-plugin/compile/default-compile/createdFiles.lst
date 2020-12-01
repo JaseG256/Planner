@@ -1,5 +1,6 @@
 com\msa\jrg\core\model\audit\UserDateAudit.class
 com\msa\jrg\core\payload\ApiResponse.class
+com\msa\jrg\core\model\MsaControllerAdvice.class
 com\msa\jrg\core\util\JsonUtil.class
 com\msa\jrg\core\model\ResourceNotFoundException.class
 com\msa\jrg\core\jffh.class

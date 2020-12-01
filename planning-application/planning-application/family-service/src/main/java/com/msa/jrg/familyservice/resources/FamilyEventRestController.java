@@ -1,6 +1,7 @@
 package com.msa.jrg.familyservice.resources;
 
 import com.msa.jrg.core.model.ResourceNotFoundException;
+import com.msa.jrg.familyservice.exception.FamilyEventNotFoundException;
 import com.msa.jrg.familyservice.model.Address;
 import com.msa.jrg.familyservice.model.FamilyEvent;
 import com.msa.jrg.familyservice.model.Place;
@@ -53,7 +54,7 @@ public class FamilyEventRestController {
             String msg = String.format(
                     eventService.getPropertiesConfig().getFamily_event_exception_message() + " {}", id);
             logger.info(msg);
-            return new ResourceNotFoundException(
+            return new FamilyEventNotFoundException(
                     eventService.getPropertiesConfig().getFamily_event_exception_message(),
                     eventService.getPropertiesConfig().getFamily_event_resource_name(),
                     eventService.getPropertiesConfig().getFamily_event_field_id(), id);
