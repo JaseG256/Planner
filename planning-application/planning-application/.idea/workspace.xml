@@ -3,21 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ea073673-6111-437c-a1e0-0fa86d3a77b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/model/AppException.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/model/AppException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/model/BadRequestException.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/model/BadRequestException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/model/MsaBaseException.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/model/MsaBaseException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/model/MsaControllerAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/model/MsaControllerAdvice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/model/MsaErrorResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/model/MsaErrorResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/model/ResourceNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/model/ResourceNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/model/audit/UserDateAudit.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/model/audit/UserDateAudit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/payload/ApiResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/payload/ApiResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/service/CRUDService.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/service/CRUDService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/util/JsonUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/msa/jrg/core/util/JsonUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/core-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/core-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/test/java/com/msa/jrg/userservice/UserServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/com/msa/jrg/userservice/UserServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/config/ServiceUnitTestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/config/ServiceUnitTestConfig.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,7 +40,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1500" />
+          <entry key="java" value="1563" />
           <entry key="properties" value="129" />
           <entry key="xml" value="475" />
           <entry key="yaml" value="1" />
@@ -62,7 +48,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1500" />
+          <entry key="JAVA" value="1563" />
           <entry key="Properties" value="129" />
           <entry key="XML" value="475" />
           <entry key="YAML" value="1" />
@@ -71,7 +57,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="141" />
+          <entry key="java" value="146" />
           <entry key="properties" value="15" />
           <entry key="xml" value="21" />
           <entry key="yaml" value="1" />
@@ -80,7 +66,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="141" />
+          <entry key="JAVA" value="146" />
           <entry key="Properties" value="15" />
           <entry key="XML" value="21" />
           <entry key="YAML" value="1" />
@@ -90,27 +76,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/model/DBFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-502">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-service/src/test/java/com/msa/jrg/userservice/UserServiceApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -130,33 +95,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/family-service/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="38" selection-start-column="38" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dbfile-service/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-833">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-service/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="163">
@@ -165,11 +103,70 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/family-service/src/main/java/com/msa/jrg/familyservice/config/ServiceUnitTestConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/config/ServiceUnitTestConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1215#1216#0" expanded="true" />
+                <element signature="e#1263#1264#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/repository/RoleRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-service/src/test/java/com/msa/jrg/userservice/repository/RoleRepositoryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/repository/UserRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user-service/src/test/java/com/msa/jrg/userservice/repository/UserRepositoryExam.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1189">
+              <caret line="78" column="71" selection-start-line="78" selection-start-column="71" selection-end-line="78" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -192,10 +189,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="JUnit4 Test Class" />
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -207,8 +204,8 @@
       <find>getFamilyNotFoundException</find>
       <find>FamilyEventController</find>
       <find>service</find>
-      <find>ServicePropertiesConfig</find>
       <find>ResourceNotFoundException</find>
+      <find>ServicePropertiesConfig</find>
     </findStrings>
     <replaceStrings>
       <replace>%s</replace>
@@ -218,10 +215,12 @@
       <replace>getFamilyEventNotFoundException</replace>
       <replace>FamilyRestEventController</replace>
       <replace>FamilyEventRestController</replace>
-      <replace>RolePropertiesConfig</replace>
       <replace>role</replace>
       <replace>UserPropertiesConfig</replace>
       <replace>UserNotFoundException</replace>
+      <replace>rolePropertiesConfig</replace>
+      <replace>RolePropertiesConfig</replace>
+      <replace>userPropertiesConfig</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -230,9 +229,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/family-service/src/main/java/com/msa/jrg/familyservice/exception/FamilyServiceControllerAdvice.java" />
-        <option value="$PROJECT_DIR$/family-service/src/main/java/com/msa/jrg/familyservice/exception/PlaceNotFoundException.java" />
-        <option value="$PROJECT_DIR$/family-service/src/main/java/com/msa/jrg/familyservice/service/PlaceServiceImpl.java" />
         <option value="$PROJECT_DIR$/family-service/src/main/java/com/msa/jrg/familyservice/service/FamilyEventServiceImpl.java" />
         <option value="$PROJECT_DIR$/family-service/src/main/java/com/msa/jrg/familyservice/exception/FamilyEventNotFoundException.java" />
         <option value="$PROJECT_DIR$/dbfile-service/pom.xml" />
@@ -281,6 +277,9 @@
         <option value="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/model/User.java" />
         <option value="$PROJECT_DIR$/user-service/pom.xml" />
         <option value="$PROJECT_DIR$/user-service/src/test/java/com/msa/jrg/userservice/UserServiceApplicationTests.java" />
+        <option value="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/config/ServiceUnitTestConfig.java" />
+        <option value="$PROJECT_DIR$/user-service/src/test/java/com/msa/jrg/userservice/repository/RoleRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/user-service/src/test/java/com/msa/jrg/userservice/repository/UserRepositoryExam.java" />
       </list>
     </option>
   </component>
@@ -315,47 +314,47 @@
             <path>
               <item name="planning-application" type="b2602c69:ProjectViewProjectNode" />
               <item name="planning-application" type="462c0819:PsiDirectoryNode" />
-              <item name="family-service" type="462c0819:PsiDirectoryNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="planning-application" type="b2602c69:ProjectViewProjectNode" />
               <item name="planning-application" type="462c0819:PsiDirectoryNode" />
-              <item name="family-service" type="462c0819:PsiDirectoryNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="planning-application" type="b2602c69:ProjectViewProjectNode" />
               <item name="planning-application" type="462c0819:PsiDirectoryNode" />
-              <item name="family-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="planning-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="planning-application" type="462c0819:PsiDirectoryNode" />
-              <item name="family-service" type="462c0819:PsiDirectoryNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="planning-application" type="b2602c69:ProjectViewProjectNode" />
               <item name="planning-application" type="462c0819:PsiDirectoryNode" />
-              <item name="family-service" type="462c0819:PsiDirectoryNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="familyservice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="planning-application" type="b2602c69:ProjectViewProjectNode" />
               <item name="planning-application" type="462c0819:PsiDirectoryNode" />
-              <item name="family-service" type="462c0819:PsiDirectoryNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="familyservice" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="userservice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="planning-application" type="b2602c69:ProjectViewProjectNode" />
+              <item name="planning-application" type="462c0819:PsiDirectoryNode" />
+              <item name="user-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="userservice" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -366,7 +365,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606866797415" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606868435514" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -376,6 +375,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.msa.jrg.userservice.repository" />
       <recent name="com.msa.jrg.familyservice.resources" />
       <recent name="com.msa.jrg.familyservice.service" />
       <recent name="com.msa.jrg.familyservice.repository" />
@@ -405,35 +405,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceApplicationTests.contextLoads">
-    <configuration name="FamilyEventRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="family-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msa.jrg.familyservice.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.msa.jrg.familyservice.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.msa.jrg.familyservice.repository.FamilyEventRepositoryTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FamilyEventRestControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="family-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.msa.jrg.familyservice.resources.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.msa.jrg.familyservice.resources" />
-      <option name="MAIN_CLASS_NAME" value="com.msa.jrg.familyservice.resources.FamilyEventRestControllerTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.RoleServiceImplTest">
     <configuration name="FamilyEventServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="family-service" />
       <extension name="coverage">
@@ -448,16 +420,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaceServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="family-service" />
+    <configuration name="RoleRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.msa.jrg.familyservice.service.*" />
+          <option name="PATTERN" value="com.msa.jrg.userservice.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.msa.jrg.familyservice.service" />
-      <option name="MAIN_CLASS_NAME" value="com.msa.jrg.familyservice.service.PlaceServiceImplTest" />
+      <option name="PACKAGE_NAME" value="com.msa.jrg.userservice.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.msa.jrg.userservice.repository.RoleRepositoryTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoleServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msa.jrg.userservice.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.msa.jrg.userservice.service" />
+      <option name="MAIN_CLASS_NAME" value="com.msa.jrg.userservice.service.RoleServiceImplTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryExam" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.msa.jrg.userservice.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.msa.jrg.userservice.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.msa.jrg.userservice.repository.UserRepositoryExam" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -519,19 +519,19 @@
       <item itemvalue="Spring Boot.EurekaServerApplication" />
       <item itemvalue="Spring Boot.DbfileServiceApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
-      <item itemvalue="JUnit.FamilyEventRepositoryTest" />
-      <item itemvalue="JUnit.PlaceServiceImplTest" />
       <item itemvalue="JUnit.FamilyEventServiceImplTest" />
-      <item itemvalue="JUnit.FamilyEventRestControllerTest" />
       <item itemvalue="JUnit.UserServiceApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.RoleRepositoryTest" />
+      <item itemvalue="JUnit.UserRepositoryExam" />
+      <item itemvalue="JUnit.RoleServiceImplTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RoleServiceImplTest" />
+        <item itemvalue="JUnit.UserRepositoryExam" />
+        <item itemvalue="JUnit.RoleRepositoryTest" />
         <item itemvalue="JUnit.UserServiceApplicationTests.contextLoads" />
         <item itemvalue="JUnit.FamilyEventServiceImplTest" />
-        <item itemvalue="JUnit.PlaceServiceImplTest" />
-        <item itemvalue="JUnit.FamilyEventRestControllerTest" />
-        <item itemvalue="JUnit.FamilyEventRepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -545,14 +545,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606692719874</updated>
-      <workItem from="1606692725271" duration="39501000" />
+      <workItem from="1606692725271" duration="40805000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FamilyEventRestControllerTest - 2020.12.01 at 11h 59m 19s.xml">
-      <configuration name="FamilyEventRestControllerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FamilyEventRestControllerTest - 2020.12.01 at 12h 01m 44s.xml">
       <configuration name="FamilyEventRestControllerTest" configurationId="JUnit" />
     </history-entry>
@@ -580,12 +577,16 @@
     <history-entry file="FamilyEventServiceImplTest - 2020.12.01 at 12h 22m 05s.xml">
       <configuration name="FamilyEventServiceImplTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RoleRepositoryTest - 2020.12.01 at 16h 14m 25s.xml">
+      <configuration name="RoleRepositoryTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39501000" />
+    <option name="totallyTimeSpent" value="40805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -596,7 +597,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23562753" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.1744186" />
+      <window_info anchor="bottom" id="Terminal" weight="0.1744186" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32890365" />
@@ -605,7 +606,7 @@
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32890365" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7026578" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30066445" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -666,37 +667,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/msa/jrg/core/model/AppException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="99" selection-start-line="19" selection-start-column="99" selection-end-line="19" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#315#316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/family-service/src/test/java/com/msa/jrg/familyservice/repository/PlaceRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/family-service/src/main/java/com/msa/jrg/familyservice/model/Place.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1253#1254#0" expanded="true" />
-            <element signature="e#1301#1302#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/family-service/src/main/java/com/msa/jrg/familyservice/model/When.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -933,30 +903,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/repository/RoleRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1117,6 +1067,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/config/ServiceUnitTestConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1215#1216#0" expanded="true" />
+            <element signature="e#1263#1264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/repository/RoleRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/test/java/com/msa/jrg/userservice/repository/RoleRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/test/java/com/msa/jrg/userservice/repository/UserRepositoryExam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1189">
+          <caret line="78" column="71" selection-start-line="78" selection-start-column="71" selection-end-line="78" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
