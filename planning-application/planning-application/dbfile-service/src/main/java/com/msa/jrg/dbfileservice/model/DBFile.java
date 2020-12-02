@@ -65,11 +65,4 @@ public class DBFile extends UserDateAudit {
         this.data = data;
     }
 
-//    public User getUser() {
-//        return user;
-//    }
-//
-//    public void setUser(User user) {
-//        this.user = user;
-//    }
 }

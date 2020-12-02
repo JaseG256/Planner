@@ -50,6 +50,7 @@
     <modules>
         <module>eureka-server</module>
         <module>core</module>
+        <module>zipkin-server</module>
         <module>dbfile-service</module>
         <module>user-service</module>
         <module>family-service</module>

@@ -12,6 +12,7 @@
         <module name="family-service" />
         <module name="gateway" />
         <module name="user-service" />
+        <module name="zipkin-server" />
       </profile>
     </annotationProcessing>
   </component>
