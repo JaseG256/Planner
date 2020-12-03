@@ -1,8 +1,11 @@
 package com.msa.jrg.familyservice.model;
 
 import com.msa.jrg.core.model.audit.UserDateAudit;
+import com.msa.jrg.familyservice.payload.FamilyEventRequest;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.NonNull;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -54,6 +57,22 @@ public class FamilyEvent extends UserDateAudit implements FamilyServiceInterface
         this.title = title;
         this.when = when;
         this.place = place;
+    }
+
+    @Builder
+    public static FamilyEvent buildFamilyEvent(String title, When when, Place place) {
+        FamilyEvent familyEvent = new FamilyEvent();
+        familyEvent.title = title;
+        familyEvent.when = when;
+        familyEvent.place = place;
+        return familyEvent;
+    }
+
+    public FamilyEvent fromFamilyEventRequest(@NonNull FamilyEventRequest eventRequest) {
+        return new FamilyEvent(eventRequest.getTitle(), new When(eventRequest.getStartDate(), eventRequest.getEndDate(),
+                eventRequest.getStartTime(), eventRequest.getEndTime()), new Place(eventRequest.getNameOfPlace(),
+                eventRequest.getLocation(), new Address(eventRequest.getStreetNumber(), eventRequest.getCity(),
+                eventRequest.getState(), eventRequest.getCountry(), eventRequest.getZipCode())));
     }
 
     @Override

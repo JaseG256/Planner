@@ -6,6 +6,8 @@ import com.msa.jrg.userservice.config.UserPropertiesConfig;
 import com.msa.jrg.userservice.exception.UserNotFoundException;
 import com.msa.jrg.userservice.model.User;
 import com.msa.jrg.userservice.repository.UserRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,6 +18,7 @@ import java.util.Optional;
 @Service(value = "userServicer")
 public class UserServiceImpl implements UserService {
 
+    private final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
     private final UserRepository userRepository;
     private final UserPropertiesConfig propertiesConfig;
 
@@ -47,28 +50,19 @@ public class UserServiceImpl implements UserService {
         return userRepository.findById(id).map(user -> {
             userRepository.deleteById(id);
             return new ApiResponse(true, propertiesConfig.getUser_delete_apiResponse_message());
-        }).orElseThrow(() -> new UserNotFoundException(
-                propertiesConfig.getUser_exception_message(),
-                propertiesConfig.getUser_resource_name(),
-                propertiesConfig.getUser_field_id(), id));
-
+        }).orElseThrow(() -> getUserNotFoundException(id));
     }
+
 
     @Override
     public User findByUsername(String username) {
         return userRepository.findByUsername(username)
-                .orElseThrow(() -> new UserNotFoundException(
-                        propertiesConfig.getUser_exception_message(),
-                        propertiesConfig.getUser_resource_name(),
-                        propertiesConfig.getUser_field_name(), username)); }
+                .orElseThrow(() -> getUserNotFoundException(username)); }
 
     @Override
     public User findByEmail(String email) {
         return userRepository.findByEmail(email)
-                .orElseThrow(() -> new UserNotFoundException(
-                        propertiesConfig.getUser_exception_message(),
-                        propertiesConfig.getUser_resource_name(),
-                        propertiesConfig.getUser_field_name(), email));
+                .orElseThrow(() -> getUserNotFoundException(email));
     }
 
     @Override
@@ -88,6 +82,24 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Boolean existsByEmail(String email) { return userRepository.existsByEmail(email); }
+
+    @Override
+    public UserPropertiesConfig propertyConfig() {
+        return this.propertiesConfig;
+    }
+
+    private UserNotFoundException getUserNotFoundException(Object fieldValue) {
+        String msg = logException(fieldValue);
+        return new UserNotFoundException(
+                msg, propertiesConfig.getUser_resource_name(), propertiesConfig.getUser_field_id(), fieldValue
+        );
+    }
+
+    private String logException(Object fieldValue) {
+        String msg = String.format(propertiesConfig.getUser_exception_message(), fieldValue);
+        logger.debug(msg);
+        return msg;
+    }
 
 
 }

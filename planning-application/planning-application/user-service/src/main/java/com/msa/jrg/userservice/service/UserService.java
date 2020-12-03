@@ -1,6 +1,7 @@
 package com.msa.jrg.userservice.service;
 
 import com.msa.jrg.core.service.CRUDService;
+import com.msa.jrg.userservice.config.UserPropertiesConfig;
 import com.msa.jrg.userservice.model.User;
 
 import java.util.List;
@@ -21,4 +22,6 @@ public interface UserService extends CRUDService<User> {
     Boolean existsByUsername(String username);
 
     Boolean existsByEmail(String email);
+
+    UserPropertiesConfig propertyConfig();
 }

@@ -4,6 +4,8 @@ import com.msa.jrg.userservice.exception.UserNotFoundException;
 import com.msa.jrg.userservice.model.User;
 import com.msa.jrg.userservice.payload.UserIdentityAvailability;
 import com.msa.jrg.userservice.service.UserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,6 +15,8 @@ import java.util.List;
 @RequestMapping("/api")
 //@RequestMapping("/users")
 public class UserRestController {
+
+    private final Logger logger = LoggerFactory.getLogger(UserRestController.class);
 
     @Qualifier("userServicer")
     private final UserService userService;
@@ -38,7 +42,13 @@ public class UserRestController {
 //    @PreAuthorize("hasRole('USER')")
     @GetMapping(path = "/user/{id}")
     public User findOne(@PathVariable("id") Long id){
-        return userService.getById(id).orElseThrow(UserNotFoundException::new);
+        return userService.getById(id).orElseThrow(() -> {
+            String msg = String.format(userService.propertyConfig().getUser_exception_message(), id);
+            logger.debug(msg);
+            return new UserNotFoundException(msg,
+                    userService.propertyConfig().getUser_resource_name(),
+                    userService.propertyConfig().getUser_field_id(), id);
+        });
     }
 
 //    @PreAuthorize("hasRole('USER')")

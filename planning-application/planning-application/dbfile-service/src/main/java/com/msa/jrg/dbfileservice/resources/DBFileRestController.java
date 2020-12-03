@@ -3,9 +3,6 @@ package com.msa.jrg.dbfileservice.resources;
 import com.msa.jrg.dbfileservice.model.DBFile;
 import com.msa.jrg.dbfileservice.payload.UploadFileResponse;
 import com.msa.jrg.dbfileservice.service.DBFileStorageService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
@@ -21,6 +18,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
+@RequestMapping("/api/dbfile")
 public class DBFileRestController {
 
     @Qualifier("fileServicer")
