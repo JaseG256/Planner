@@ -8,4 +8,6 @@ public interface DBFileStorageService {
     DBFile storeFile(MultipartFile file);
 
     DBFile getFile(String fileId);
+
+    DBFile findByFileName(String fileName);
 }

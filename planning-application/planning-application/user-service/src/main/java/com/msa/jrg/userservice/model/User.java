@@ -28,6 +28,8 @@ public class User extends DateAudit {
     @Column
     private String password;
 
+    private String imageFileName;
+
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "user_roles",
             joinColumns = @JoinColumn(name = "user_id"),
@@ -87,7 +89,15 @@ public class User extends DateAudit {
         this.roles = roles;
     }
 
-//    public DBFile getAvatar() { return avatar; }
+    public String getImageFileName() {
+        return imageFileName;
+    }
+
+    public void setImageFileName(String imageFileName) {
+        this.imageFileName = imageFileName;
+    }
+
+    //    public DBFile getAvatar() { return avatar; }
 //
 //    public void setAvatar(DBFile avatar) { this.avatar = avatar; }
 

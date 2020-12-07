@@ -31,13 +31,15 @@ public class DBFileStorageServiceImpl implements DBFileStorageService {
 
     @Override
     public DBFile storeFile(MultipartFile file) {
+        logger.info(propertiesConfig.getDbfile_storeFile_log_info(),
+                StringUtils.cleanPath(Objects.requireNonNull(file.getOriginalFilename())));
         String fileName = Optional.of(StringUtils.cleanPath(Objects.requireNonNull(file.getOriginalFilename())))
                 .orElse(propertiesConfig.getUnknown_name());
 
         try {
             if (fileName.contains("..")) {
                 String msg = String.format(propertiesConfig.getInvalid_path_sequence(), fileName);
-                logger.error(msg);
+                logger.debug(msg);
                 throw new FileStorageException(msg);
             }
 
@@ -45,17 +47,29 @@ public class DBFileStorageServiceImpl implements DBFileStorageService {
             return dbFileRepository.save(dbFile);
         } catch (IOException e) {
             String msg = String.format(propertiesConfig.getFile_storage_exception(), fileName);
-            logger.error(msg);
+            logger.debug(msg);
             throw new FileStorageException(msg, e);
         }
     }
 
     @Override
     public DBFile getFile(String fileId) {
+        logger.info(propertiesConfig.getDbfile_getFile_log_info(), fileId);
         return dbFileRepository.findById(fileId).
                 orElseThrow(() -> {
                     String msg = String.format(propertiesConfig.getDbfile_exception_message(),  fileId);
                     logger.error(msg);
+                    return new MyFileNotFoundException(msg);
+                });
+    }
+
+    @Override
+    public DBFile findByFileName(String fileName) {
+        logger.info(propertiesConfig.getDbfile_findByFileName_log_info(), fileName);
+        return dbFileRepository.findByFileName(fileName)
+                .orElseThrow(() -> {
+                    String msg = String.format(propertiesConfig.getDbfile_exception_message(), fileName);
+                    logger.debug(msg);
                     return new MyFileNotFoundException(msg);
                 });
     }

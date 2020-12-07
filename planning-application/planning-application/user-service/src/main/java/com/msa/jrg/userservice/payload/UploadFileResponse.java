@@ -1,7 +1,9 @@
-package com.msa.jrg.dbfileservice.payload;
+package com.msa.jrg.userservice.payload;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 @Data
 public class UploadFileResponse {
 
@@ -18,5 +20,4 @@ public class UploadFileResponse {
         this.fileType = fileType;
         this.size = size;
     }
-
 }

@@ -12,6 +12,12 @@ import java.util.Optional;
 @ControllerAdvice(annotations = RestController.class)
 public class DBFileControllerAdvice extends MsaControllerAdvice {
 
+    @Override
+    @ExceptionHandler(BadRequestException.class)
+    public ResponseEntity<MsaErrorResponse> badRequest(BadRequestException e) {
+        return super.badRequest(e);
+    }
+
     @ExceptionHandler(MyFileNotFoundException.class)
     public ResponseEntity<MsaErrorResponse> myFileNotFoundNotFound(MyFileNotFoundException e) {
         return this.buildErrorResponse(e, HttpStatus.NOT_FOUND, e.getExceptionMessage());

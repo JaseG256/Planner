@@ -1,18 +1,24 @@
 package com.msa.jrg.userservice.resources;
 
+import com.msa.jrg.core.payload.ApiResponse;
+import com.msa.jrg.userservice.client.DBFileRestClient;
 import com.msa.jrg.userservice.exception.UserNotFoundException;
 import com.msa.jrg.userservice.model.User;
 import com.msa.jrg.userservice.payload.UserIdentityAvailability;
+import com.msa.jrg.userservice.payload.UploadFileResponse;
 import com.msa.jrg.userservice.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.core.io.Resource;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/v1")
 //@RequestMapping("/users")
 public class UserRestController {
 
@@ -21,8 +27,12 @@ public class UserRestController {
     @Qualifier("userServicer")
     private final UserService userService;
 
-    public UserRestController(UserService userService) {
+    @Qualifier("dbFileRestClient")
+    private final DBFileRestClient dbFileRestClient;
+
+    public UserRestController(UserService userService, DBFileRestClient dbFileRestClient) {
         this.userService = userService;
+        this.dbFileRestClient = dbFileRestClient;
     }
 
     @PostMapping(path = "/user/add")
@@ -42,6 +52,7 @@ public class UserRestController {
 //    @PreAuthorize("hasRole('USER')")
     @GetMapping(path = "/user/{id}")
     public User findOne(@PathVariable("id") Long id){
+        logger.info(userService.propertyConfig().getFind_by_id_message(), id);
         return userService.getById(id).orElseThrow(() -> {
             String msg = String.format(userService.propertyConfig().getUser_exception_message(), id);
             logger.debug(msg);
@@ -49,6 +60,30 @@ public class UserRestController {
                     userService.propertyConfig().getUser_resource_name(),
                     userService.propertyConfig().getUser_field_id(), id);
         });
+    }
+
+    @PostMapping(path = "/dbfile/{id}/uploadFile")
+    public ApiResponse uploadImage(@PathVariable("id") Long userID, MultipartFile file) {
+        User user = userService.getById(userID).orElseThrow(() -> {
+            String msg = String.format(userService.propertyConfig().getUser_exception_message(), userID);
+            logger.debug(msg);
+            return new UserNotFoundException(msg,
+                    userService.propertyConfig().getUser_resource_name(),
+                    userService.propertyConfig().getUser_field_id(), userID);
+        });
+        UploadFileResponse uploadFileResponse = dbFileRestClient.uploadImage(file).getBody();
+        assert uploadFileResponse != null;
+        logger.info("File created location: {}", uploadFileResponse.getUploadFileUri());
+        user.setImageFileName(uploadFileResponse.getFileName());
+        logger.info(
+                userService.propertyConfig().getUpload_image_success_message(), user.getId(), user.getImageFileName()
+        );
+        return new ApiResponse(true, userService.propertyConfig().getUpload_image_success_message());
+    }
+
+    @GetMapping(path = "/dbfile/downloadFile/{fileName}")
+    public ResponseEntity<Resource> findByFileName(@PathVariable String fileName) {
+        return dbFileRestClient.findByFileName(fileName);
     }
 
 //    @PreAuthorize("hasRole('USER')")

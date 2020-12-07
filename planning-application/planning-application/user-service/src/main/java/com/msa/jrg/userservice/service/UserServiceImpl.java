@@ -8,8 +8,11 @@ import com.msa.jrg.userservice.model.User;
 import com.msa.jrg.userservice.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,16 +37,19 @@ public class UserServiceImpl implements UserService {
         return users;
     }
 
+    @Cacheable(value = "user")
     @Override
     public Optional<User> getById(Long id) {
         return userRepository.findById(id);
     }
 
+    @CacheEvict(value = "user", key = "#user.getId()")
     @Override
-    public User saveOrUpdate(User domainObject) {
-        return userRepository.save(domainObject);
+    public User saveOrUpdate(User user) {
+        return userRepository.save(user);
     }
 
+    @CacheEvict(value = "user", key = "#id")
     @Override
     @Transactional
     public ApiResponse delete(Long id) {
@@ -82,6 +88,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Boolean existsByEmail(String email) { return userRepository.existsByEmail(email); }
+
+    @Override
+    public ApiResponse uploadFile(Long userId, MultipartFile file) {
+        return null;
+    }
 
     @Override
     public UserPropertiesConfig propertyConfig() {
