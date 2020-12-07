@@ -3,25 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ea073673-6111-437c-a1e0-0fa86d3a77b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/core-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/core-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbfile-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dbfile-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/DbfileServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/DbfileServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/config/DBFilePropertiesConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/config/DBFilePropertiesConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/exception/DBFileControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/exception/DBFileControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/payload/UploadFileResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/payload/UploadFileResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/repository/DBFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/repository/DBFileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/resources/DBFileRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/resources/DBFileRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/service/DBFileStorageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/service/DBFileStorageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/service/DBFileStorageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/service/DBFileStorageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbfile-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dbfile-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/family-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/family-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/config/UserPropertiesConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/config/UserPropertiesConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/resources/UserRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/resources/UserRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -64,17 +46,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="12" />
-          <entry key="java" value="4811" />
-          <entry key="properties" value="1268" />
+          <entry key="java" value="4971" />
+          <entry key="properties" value="1288" />
           <entry key="xml" value="675" />
           <entry key="yaml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4811" />
+          <entry key="JAVA" value="4971" />
           <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Properties" value="1268" />
+          <entry key="Properties" value="1288" />
           <entry key="XML" value="675" />
           <entry key="YAML" value="1" />
         </counts>
@@ -82,19 +64,19 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="5" />
-          <entry key="java" value="228" />
+          <entry key="java" value="229" />
           <entry key="properties" value="33" />
           <entry key="xml" value="45" />
-          <entry key="yaml" value="1" />
+          <entry key="yaml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="5" />
-          <entry key="JAVA" value="228" />
+          <entry key="JAVA" value="229" />
           <entry key="Properties" value="33" />
           <entry key="XML" value="45" />
-          <entry key="YAML" value="1" />
+          <entry key="YAML" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -148,7 +130,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/resources/UserRestController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
@@ -179,8 +161,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-service/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-375">
-              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+            <state relative-caret-position="118">
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/service/DiscoveryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="20" column="89" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -190,15 +193,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="73" column="25" selection-start-line="69" selection-start-column="12" selection-end-line="73" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-service/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-971">
-              <caret line="64" column="34" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -254,8 +248,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/exception/RoleNotFoundException.java" />
-        <option value="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/exception/UserNotFoundException.java" />
         <option value="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/service/RoleServiceImpl.java" />
         <option value="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/payload/UserIdentityAvailability.java" />
         <option value="$PROJECT_DIR$/user-service/src/test/java/com/msa/jrg/userservice/UserServiceApplicationTests.java" />
@@ -297,7 +289,6 @@
         <option value="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/config/UserPropertiesConfig.java" />
         <option value="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/config/ServiceUnitTestConfig.java" />
         <option value="$PROJECT_DIR$/dbfile-service/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/user-service/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/DbfileServiceApplication.java" />
         <option value="$PROJECT_DIR$/user-service/pom.xml" />
         <option value="$PROJECT_DIR$/dbfile-service/pom.xml" />
@@ -305,6 +296,9 @@
         <option value="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/client/WebClientConfig.java" />
         <option value="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/client/DBFileRestClient.java" />
         <option value="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/resources/UserRestController.java" />
+        <option value="$PROJECT_DIR$/user-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/eureka-server/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/service/DiscoveryService.java" />
       </list>
     </option>
   </component>
@@ -379,35 +373,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="userservice" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="planning-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="planning-application" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="userservice" type="462c0819:PsiDirectoryNode" />
-              <item name="payload" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="planning-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="planning-application" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="userservice" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="planning-application" type="b2602c69:ProjectViewProjectNode" />
-              <item name="planning-application" type="462c0819:PsiDirectoryNode" />
-              <item name="user-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -422,7 +388,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1607364616231" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1607366517076" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -613,7 +579,7 @@
       <updated>1606692719874</updated>
       <workItem from="1606692725271" duration="55907000" />
       <workItem from="1607020412184" duration="15751000" />
-      <workItem from="1607111618041" duration="35062000" />
+      <workItem from="1607111618041" duration="36873000" />
     </task>
     <servers />
   </component>
@@ -650,7 +616,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106720000" />
+    <option name="totallyTimeSpent" value="108531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
@@ -735,14 +701,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zipkin-server/src/test/java/com/msa/jrg/zipkinserver/ZipkinServerApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="8" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/DBFileService.java" />
     <entry file="file://$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/exception/FileStorageException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1089,13 +1047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-service/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dbfile-service/src/main/java/com/msa/jrg/dbfileservice/resources/DBFileRestController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="996">
@@ -1155,6 +1106,30 @@
             <element signature="e#3909#3910#0" expanded="true" />
             <element signature="e#4854#4855#0" expanded="true" />
             <element signature="e#4892#4893#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-service/src/main/java/com/msa/jrg/userservice/service/DiscoveryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="20" column="89" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
