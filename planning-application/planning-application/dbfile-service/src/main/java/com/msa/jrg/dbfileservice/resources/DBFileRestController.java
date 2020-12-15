@@ -18,7 +18,7 @@ import java.net.URI;
 
 
 @RestController
-@RequestMapping("/api/v1/dbfile")
+@RequestMapping("/")
 public class DBFileRestController {
 
     @Qualifier("fileServicer")
@@ -29,7 +29,7 @@ public class DBFileRestController {
     }
 
     //    @PreAuthorize("hasRole('USER')")
-    @PostMapping("/uploadFile")
+    @PostMapping("/dbfile/uploadFile")
     public ResponseEntity<UploadFileResponse> uploadFile(@RequestParam("file") MultipartFile file) {
         DBFile dbFile = dbFileStorageService.storeFile(file);
 
@@ -52,7 +52,7 @@ public class DBFileRestController {
 //    }
 
     //    @PreAuthorize("hasRole('USER')")
-    @GetMapping("/fileById/{fileId}")
+    @GetMapping("/dbfile/fileById/{fileId}")
     public ResponseEntity<Resource> downloadFile(@PathVariable String fileId) {
         DBFile dbFile = dbFileStorageService.getFile(fileId);
 
@@ -62,7 +62,7 @@ public class DBFileRestController {
                 .body(new ByteArrayResource(dbFile.getData()));
     }
 
-    @GetMapping("/downloadFile/{fileName}")
+    @GetMapping("/dbfile/downloadFile/{fileName}")
     public ResponseEntity<Resource> findByFileName(@PathVariable String fileName) {
         DBFile dbFile = dbFileStorageService.findByFileName(fileName);
 

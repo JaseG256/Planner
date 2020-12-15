@@ -1,0 +1,10 @@
+server:
+  port: 5000
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          search-paths: config-files/*
+          uri: file://${user.home}/config-files

@@ -24,7 +24,7 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@RequestMapping("api/event")
+@RequestMapping("/")
 public class FamilyEventRestController {
 
     private final Logger logger = LoggerFactory.getLogger(FamilyEventRestController.class);

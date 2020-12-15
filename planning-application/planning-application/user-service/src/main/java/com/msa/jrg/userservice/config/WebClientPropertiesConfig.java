@@ -7,5 +7,5 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "webclient")
 public class WebClientPropertiesConfig {
 
-    private String baseUrl, uploadFileUrl, fileName, fileType, data, getFile;
+    private String baseUrl, uploadFileUrl, fileName, fileType, data, getFile, dbfile_service, dbfile_path;
 }

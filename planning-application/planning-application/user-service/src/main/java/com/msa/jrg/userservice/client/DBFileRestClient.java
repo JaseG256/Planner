@@ -2,12 +2,15 @@ package com.msa.jrg.userservice.client;
 
 import com.msa.jrg.userservice.config.WebClientPropertiesConfig;
 import com.msa.jrg.userservice.payload.UploadFileResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
@@ -19,11 +22,17 @@ import java.util.Collections;
 @Service("dbFileRestClient")
 public class DBFileRestClient {
 
+    private final Logger logger = LoggerFactory.getLogger(DBFileRestClient.class);
     private final RestTemplate restTemplate;
+    private final DiscoveryService discoveryService;
     private final WebClientPropertiesConfig propertiesConfig;
 
-    public DBFileRestClient(@LoadBalanced RestTemplate restTemplate, WebClientPropertiesConfig propertiesConfig) {
+    public DBFileRestClient(
+            @LoadBalanced RestTemplate restTemplate,
+            DiscoveryService discoveryService,
+            WebClientPropertiesConfig propertiesConfig) {
         this.restTemplate = restTemplate;
+        this.discoveryService = discoveryService;
         this.propertiesConfig = propertiesConfig;
     }
 
@@ -40,8 +49,13 @@ public class DBFileRestClient {
                 propertiesConfig.getUploadFileUrl(), requestEntitiy, UploadFileResponse.class);
     }
 
-    public ResponseEntity<Resource> findByFileName(String fileName) {
-        return restTemplate.getForEntity("http://DBFILE-SERVICE/api/v1/dbfile/downloadFile/" + fileName,
+    public ResponseEntity<?> findByFileName(String fileName) {
+        logger.trace("FileName: {}", fileName);
+        String serviceAddress = discoveryService.getServiceAddressFor("DBFILE-SERVICE");
+        logger.trace("Service address: {}", serviceAddress);
+        System.out.print(String.format("Service address: %s", serviceAddress));
+        return restTemplate.getForEntity(
+                serviceAddress + "api/v1/dbfile/downloadFile/" + fileName,
                 Resource.class);
     }
 }

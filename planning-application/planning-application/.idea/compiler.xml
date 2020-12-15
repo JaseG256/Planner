@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
         <module name="core" />
         <module name="dbfile-service" />
+        <module name="edge-server" />
         <module name="eureka-server" />
         <module name="family-service" />
         <module name="gateway" />

@@ -18,7 +18,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/")
 //@RequestMapping("/users")
 public class UserRestController {
 
@@ -82,7 +82,7 @@ public class UserRestController {
     }
 
     @GetMapping(path = "/dbfile/downloadFile/{fileName}")
-    public ResponseEntity<Resource> findByFileName(@PathVariable String fileName) {
+    public ResponseEntity<?> findByFileName(@PathVariable String fileName) {
         return dbFileRestClient.findByFileName(fileName);
     }
 

@@ -117,6 +117,12 @@
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-zuul</artifactId>
+            <version>2.2.0.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 
