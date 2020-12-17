@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="config-server" />
         <module name="core" />
         <module name="dbfile-service" />
         <module name="edge-server" />
@@ -14,8 +13,11 @@
         <module name="family-service" />
         <module name="gateway" />
         <module name="user-service" />
-        <module name="zipkin-server" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config-server" target="11" />
+      <module name="zipkin-server" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

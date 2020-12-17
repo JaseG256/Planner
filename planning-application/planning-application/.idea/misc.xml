@@ -10,9 +10,7 @@
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/dbfile-service/pom.xml" />
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/zipkin-server/pom.xml" />
         <option value="$PROJECT_DIR$/edge-server/pom.xml" />
-        <option value="$PROJECT_DIR$/config-server/pom.xml" />
       </list>
     </option>
   </component>
