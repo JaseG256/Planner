@@ -97,4 +97,5 @@ public class RoleServiceImplTest {
 ////        assertThat(foundRole.getName(), not(equalTo(userRoleName)));
 //        assertNotSame(userRoleName, foundRole.getName());
 //    }
+
 }

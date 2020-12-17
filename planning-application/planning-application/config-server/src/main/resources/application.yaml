@@ -4,7 +4,8 @@ server:
 spring:
   cloud:
     config:
+      name: config-server
       server:
         git:
-          search-paths: config-files/*
-          uri: file://${user.home}/config-files
+          uri: https://github.com/JaseG256/Msa-Service.git
+          search-paths: config-files*

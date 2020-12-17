@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
-@EnableZuulProxy
+//@EnableZuulProxy
 @EnableEurekaClient
 @EnableConfigurationProperties(DBFilePropertiesConfig.class)
 @SpringBootApplication
